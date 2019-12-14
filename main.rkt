@@ -165,7 +165,7 @@
                              (cons (add1 (car xs))
                                    (map-add1 (cdr xs)))))
                        (map-add1 (cons 1 (cons 2 (cons 3 '()))))))
-               ''(2 3 4))
+               '(2 3 4))
 
 (check-equal? (run
                '(begin
@@ -177,5 +177,5 @@
                         (cons (string-ref str i)
                               (explode/i str (add1 i)))))
                   (explode "fred")))
-              ''(#\f #\r #\e #\d))
+              '(#\f #\r #\e #\d))
 
